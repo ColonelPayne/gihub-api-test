@@ -1,0 +1,14 @@
+<h3>История поиска</h3>
+<div *ngFor="let log of userlogs">
+  <div class="log">
+    <div class="log-userpic">
+      <img src="{{log.avatar_url}}" />
+    </div>
+
+    <div class="log-info">
+      <p>{{log.login}}</p>
+      <p>{{log.email}}</p>
+    </div>
+  </div>
+</div>
+<a href="#" (click)="onRemove()">Очистить лог</a>

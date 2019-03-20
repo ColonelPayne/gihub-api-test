@@ -1,0 +1,8 @@
+.container-item {
+  width: 400px;
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+}

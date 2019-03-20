@@ -1,0 +1,14 @@
+.log-info {
+  width: 80%;
+  padding: 10px;
+}
+.log-userpic {
+  width: 20%;
+}
+.log-userpic img {
+  width: 100%;
+}
+.log {
+  display: flex;
+  width: 250px;
+}
