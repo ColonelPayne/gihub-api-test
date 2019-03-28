@@ -3,32 +3,31 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
-import { HistoryComponent } from './history/history.component';
-import { DataComponent } from './data/data.component';
+import { CoreModule } from '@app/core';
+import { HistoryModule } from './modules/history/history.module';
+import { SearchModule } from './modules/search/search.module';
 
-import { FormService } from './form/form.service';
-import { HistoryService } from './history/history.service';
+import { AppComponent } from './app.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
-    HistoryComponent,
-    DataComponent
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    HistoryModule,
+    SearchModule
   ],
   providers: [
-    FormService,
-    HistoryService
+    // FormService,
+    // HistoryService
   ],
   bootstrap: [AppComponent]
 })

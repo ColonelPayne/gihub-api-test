@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HistoryService } from './history.service';
+import { HistoryService } from '@app/core';
+
 @Component({
   selector: 'app-history',
   templateUrl: './history.component.html',

@@ -2,7 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable, of } from 'rxjs';
 import { HttpParams } from '@angular/common/http';
-import { User } from './user';
+import { User } from '../../shared/models/user';
 import { map } from 'rxjs/operators'
 
 @Injectable()

@@ -1,9 +1,8 @@
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
-import { FormService } from './form.service';
-import { HistoryService } from './../history/history.service';
-import { User } from './user';
+import { FormService, HistoryService } from '@app/core';
+import { User } from '../../../../shared/models/user';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -15,7 +14,7 @@ export class FormComponent implements OnInit {
   form: any;
   user: User = {id: 0, login: 'Не найден', email: null, avatar_url: null};
   errorMessage: string;
-  
+
   // call user by angular reactive form input data
   // if success, create User class
   // Push User class to data component
