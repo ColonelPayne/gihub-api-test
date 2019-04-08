@@ -17,9 +17,10 @@
       "es2017",
       "dom"
     ],
-    "baseUrl": "src",
+    "baseUrl": "./",
     "paths": {
-      "@app/*": ["app/*"]
+      "@app/*": ["src/app/*"],
+      "@env/*": ["src/environments/*"]
     }
   }
 }

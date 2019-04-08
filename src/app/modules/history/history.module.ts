@@ -8,6 +8,9 @@ import { HistoryComponent } from './components/history/history.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HistoryComponent
   ]
 })
 export class HistoryModule { }

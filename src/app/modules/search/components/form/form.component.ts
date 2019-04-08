@@ -2,7 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@
 import { FormBuilder } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
 import { FormService, HistoryService } from '@app/core';
-import { User } from '../../../../shared/models/user';
+import { User } from '@app/shared/models/user';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
